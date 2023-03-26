@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
+    @EnvironmentObject var rootviewModel: RootViewModel
+    
     var body: some View {
         ZStack{
             //Imagen de fondo
@@ -33,7 +35,7 @@ struct LoginView: View {
                         .background(.blue)
                         .cornerRadius(15.0)
                         .shadow(radius: 10.0, x:20, y:10)
-                    
+                        .id(0)
                 }
                 .padding(.top, 550)
                 .opacity(0.8)

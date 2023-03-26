@@ -16,6 +16,25 @@
 		142BAE4329CF62DD00340B12 /* Practica_SwfitUI_CombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE4229CF62DD00340B12 /* Practica_SwfitUI_CombineUITests.swift */; };
 		142BAE4529CF62DD00340B12 /* Practica_SwfitUI_CombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE4429CF62DD00340B12 /* Practica_SwfitUI_CombineUITestsLaunchTests.swift */; };
 		142BAE5929CF64FB00340B12 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE5829CF64FB00340B12 /* LoginView.swift */; };
+		142BAE5C29D0374F00340B12 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE5B29D0374F00340B12 /* RootViewModel.swift */; };
+		142BAE5D29D0374F00340B12 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE5B29D0374F00340B12 /* RootViewModel.swift */; };
+		142BAE5E29D0374F00340B12 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE5B29D0374F00340B12 /* RootViewModel.swift */; };
+		142BAE6029D0376900340B12 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE5F29D0376900340B12 /* StatusModel.swift */; };
+		142BAE6129D0376900340B12 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE5F29D0376900340B12 /* StatusModel.swift */; };
+		142BAE6229D0376900340B12 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE5F29D0376900340B12 /* StatusModel.swift */; };
+		142BAE6529D0400200340B12 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 142BAE6429D0400200340B12 /* ViewInspector */; };
+		142BAE6829D044E800340B12 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE6729D044E800340B12 /* BaseNetwork.swift */; };
+		142BAE6929D044E800340B12 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE6729D044E800340B12 /* BaseNetwork.swift */; };
+		142BAE6A29D044E800340B12 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE6729D044E800340B12 /* BaseNetwork.swift */; };
+		142BAE6C29D04D6700340B12 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE6B29D04D6700340B12 /* HeroModel.swift */; };
+		142BAE6D29D04D6700340B12 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE6B29D04D6700340B12 /* HeroModel.swift */; };
+		142BAE6E29D04D6700340B12 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE6B29D04D6700340B12 /* HeroModel.swift */; };
+		142BAE7029D0544200340B12 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE6F29D0544200340B12 /* RootView.swift */; };
+		142BAE7129D0544200340B12 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE6F29D0544200340B12 /* RootView.swift */; };
+		142BAE7229D0544200340B12 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE6F29D0544200340B12 /* RootView.swift */; };
+		142BAE7529D056C500340B12 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE7429D056C500340B12 /* LoaderView.swift */; };
+		142BAE7629D056C500340B12 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE7429D056C500340B12 /* LoaderView.swift */; };
+		142BAE7729D056C500340B12 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE7429D056C500340B12 /* LoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +68,12 @@
 		142BAE4429CF62DD00340B12 /* Practica_SwfitUI_CombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practica_SwfitUI_CombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		142BAE5129CF633300340B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		142BAE5829CF64FB00340B12 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		142BAE5B29D0374F00340B12 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		142BAE5F29D0376900340B12 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
+		142BAE6729D044E800340B12 /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		142BAE6B29D04D6700340B12 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
+		142BAE6F29D0544200340B12 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		142BAE7429D056C500340B12 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142BAE6529D0400200340B12 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +125,7 @@
 		142BAE2129CF62DB00340B12 /* Practica-SwfitUI-Combine */ = {
 			isa = PBXGroup;
 			children = (
+				142BAE6629D044D700340B12 /* Services */,
 				142BAE5629CF64E100340B12 /* Models */,
 				142BAE5429CF64C400340B12 /* ViewModels */,
 				142BAE5229CF64AF00340B12 /* Views */,
@@ -140,6 +167,8 @@
 		142BAE5229CF64AF00340B12 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				142BAE7329D056B700340B12 /* Tools */,
+				142BAE6F29D0544200340B12 /* RootView.swift */,
 				142BAE5729CF64E900340B12 /* Login */,
 			);
 			path = Views;
@@ -148,6 +177,7 @@
 		142BAE5429CF64C400340B12 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				142BAE5A29D0365800340B12 /* Main */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -155,6 +185,8 @@
 		142BAE5629CF64E100340B12 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				142BAE5F29D0376900340B12 /* StatusModel.swift */,
+				142BAE6B29D04D6700340B12 /* HeroModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,6 +197,30 @@
 				142BAE5829CF64FB00340B12 /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		142BAE5A29D0365800340B12 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				142BAE5B29D0374F00340B12 /* RootViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		142BAE6629D044D700340B12 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				142BAE6729D044E800340B12 /* BaseNetwork.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		142BAE7329D056B700340B12 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				142BAE7429D056C500340B12 /* LoaderView.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +257,9 @@
 				142BAE3629CF62DD00340B12 /* PBXTargetDependency */,
 			);
 			name = "Practica-SwfitUI-CombineTests";
+			packageProductDependencies = (
+				142BAE6429D0400200340B12 /* ViewInspector */,
+			);
 			productName = "Practica-SwfitUI-CombineTests";
 			productReference = 142BAE3429CF62DD00340B12 /* Practica-SwfitUI-CombineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -255,6 +314,9 @@
 				Base,
 			);
 			mainGroup = 142BAE1629CF62DB00340B12;
+			packageReferences = (
+				142BAE6329D0400200340B12 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 142BAE2029CF62DB00340B12 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -297,10 +359,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142BAE5C29D0374F00340B12 /* RootViewModel.swift in Sources */,
+				142BAE6C29D04D6700340B12 /* HeroModel.swift in Sources */,
 				142BAE2C29CF62DD00340B12 /* Persistence.swift in Sources */,
 				142BAE2F29CF62DD00340B12 /* Practica_SwfitUI_Combine.xcdatamodeld in Sources */,
+				142BAE6029D0376900340B12 /* StatusModel.swift in Sources */,
+				142BAE7029D0544200340B12 /* RootView.swift in Sources */,
 				142BAE5929CF64FB00340B12 /* LoginView.swift in Sources */,
+				142BAE7529D056C500340B12 /* LoaderView.swift in Sources */,
 				142BAE2329CF62DB00340B12 /* Practica_SwfitUI_CombineApp.swift in Sources */,
+				142BAE6829D044E800340B12 /* BaseNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +376,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142BAE6129D0376900340B12 /* StatusModel.swift in Sources */,
+				142BAE6929D044E800340B12 /* BaseNetwork.swift in Sources */,
+				142BAE7129D0544200340B12 /* RootView.swift in Sources */,
+				142BAE7629D056C500340B12 /* LoaderView.swift in Sources */,
+				142BAE5D29D0374F00340B12 /* RootViewModel.swift in Sources */,
 				142BAE3929CF62DD00340B12 /* Practica_SwfitUI_CombineTests.swift in Sources */,
+				142BAE6D29D04D6700340B12 /* HeroModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +391,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				142BAE4329CF62DD00340B12 /* Practica_SwfitUI_CombineUITests.swift in Sources */,
+				142BAE6229D0376900340B12 /* StatusModel.swift in Sources */,
+				142BAE5E29D0374F00340B12 /* RootViewModel.swift in Sources */,
 				142BAE4529CF62DD00340B12 /* Practica_SwfitUI_CombineUITestsLaunchTests.swift in Sources */,
+				142BAE7229D0544200340B12 /* RootView.swift in Sources */,
+				142BAE7729D056C500340B12 /* LoaderView.swift in Sources */,
+				142BAE6A29D044E800340B12 /* BaseNetwork.swift in Sources */,
+				142BAE6E29D04D6700340B12 /* HeroModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +699,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		142BAE6329D0400200340B12 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				branch = 0.9.6;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		142BAE6429D0400200340B12 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 142BAE6329D0400200340B12 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		142BAE2D29CF62DD00340B12 /* Practica_SwfitUI_Combine.xcdatamodeld */ = {
