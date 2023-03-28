@@ -35,6 +35,11 @@
 		142BAE7529D056C500340B12 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE7429D056C500340B12 /* LoaderView.swift */; };
 		142BAE7629D056C500340B12 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE7429D056C500340B12 /* LoaderView.swift */; };
 		142BAE7729D056C500340B12 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE7429D056C500340B12 /* LoaderView.swift */; };
+		142BAE9C29D3610B00340B12 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE9B29D3610B00340B12 /* HomeView.swift */; };
+		142BAE9D29D3610B00340B12 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE9B29D3610B00340B12 /* HomeView.swift */; };
+		142BAE9E29D3610B00340B12 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE9B29D3610B00340B12 /* HomeView.swift */; };
+		142BAEA129D3681C00340B12 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA029D3681C00340B12 /* HeroView.swift */; };
+		142BAEA429D3705100340B12 /* viewModelHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA329D3705100340B12 /* viewModelHero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,9 @@
 		142BAE6B29D04D6700340B12 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
 		142BAE6F29D0544200340B12 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		142BAE7429D056C500340B12 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		142BAE9B29D3610B00340B12 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		142BAEA029D3681C00340B12 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
+		142BAEA329D3705100340B12 /* viewModelHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModelHero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +175,10 @@
 		142BAE5229CF64AF00340B12 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				142BAE7329D056B700340B12 /* Tools */,
+				142BAE9F29D367BA00340B12 /* HeroView */,
+				142BAE9A29D360F200340B12 /* HomeView */,
 				142BAE6F29D0544200340B12 /* RootView.swift */,
+				142BAE7329D056B700340B12 /* Tools */,
 				142BAE5729CF64E900340B12 /* Login */,
 			);
 			path = Views;
@@ -177,6 +187,7 @@
 		142BAE5429CF64C400340B12 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				142BAEA229D3703500340B12 /* New Group */,
 				142BAE5A29D0365800340B12 /* Main */,
 			);
 			path = ViewModels;
@@ -221,6 +232,30 @@
 				142BAE7429D056C500340B12 /* LoaderView.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		142BAE9A29D360F200340B12 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				142BAE9B29D3610B00340B12 /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		142BAE9F29D367BA00340B12 /* HeroView */ = {
+			isa = PBXGroup;
+			children = (
+				142BAEA029D3681C00340B12 /* HeroView.swift */,
+			);
+			path = HeroView;
+			sourceTree = "<group>";
+		};
+		142BAEA229D3703500340B12 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				142BAEA329D3705100340B12 /* viewModelHero.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,9 +396,12 @@
 			files = (
 				142BAE5C29D0374F00340B12 /* RootViewModel.swift in Sources */,
 				142BAE6C29D04D6700340B12 /* HeroModel.swift in Sources */,
+				142BAEA129D3681C00340B12 /* HeroView.swift in Sources */,
 				142BAE2C29CF62DD00340B12 /* Persistence.swift in Sources */,
 				142BAE2F29CF62DD00340B12 /* Practica_SwfitUI_Combine.xcdatamodeld in Sources */,
 				142BAE6029D0376900340B12 /* StatusModel.swift in Sources */,
+				142BAE9C29D3610B00340B12 /* HomeView.swift in Sources */,
+				142BAEA429D3705100340B12 /* viewModelHero.swift in Sources */,
 				142BAE7029D0544200340B12 /* RootView.swift in Sources */,
 				142BAE5929CF64FB00340B12 /* LoginView.swift in Sources */,
 				142BAE7529D056C500340B12 /* LoaderView.swift in Sources */,
@@ -381,6 +419,7 @@
 				142BAE7129D0544200340B12 /* RootView.swift in Sources */,
 				142BAE7629D056C500340B12 /* LoaderView.swift in Sources */,
 				142BAE5D29D0374F00340B12 /* RootViewModel.swift in Sources */,
+				142BAE9D29D3610B00340B12 /* HomeView.swift in Sources */,
 				142BAE3929CF62DD00340B12 /* Practica_SwfitUI_CombineTests.swift in Sources */,
 				142BAE6D29D04D6700340B12 /* HeroModel.swift in Sources */,
 			);
@@ -390,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142BAE9E29D3610B00340B12 /* HomeView.swift in Sources */,
 				142BAE4329CF62DD00340B12 /* Practica_SwfitUI_CombineUITests.swift in Sources */,
 				142BAE6229D0376900340B12 /* StatusModel.swift in Sources */,
 				142BAE5E29D0374F00340B12 /* RootViewModel.swift in Sources */,

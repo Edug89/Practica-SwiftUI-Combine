@@ -15,13 +15,10 @@ struct RootView: View {
         case .none:
             LoginView()
         case .loaded:
-            Text("home")
-        case .error(error: let errorString):
-            Text("Error-> \(errorString)")
+            HomeView()
         case .loading:
-            Text("Cargando... ")
-        case .register:
-            Text("Registro")
+            LoaderView()
+       
         }
     }
 }

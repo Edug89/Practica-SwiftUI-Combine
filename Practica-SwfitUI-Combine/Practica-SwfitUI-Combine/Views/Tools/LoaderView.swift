@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct LoaderView: View {
+    
+    @State private var animationAmount = 0.4
+    @State private var animate = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(decorative: "36713_footer_marvel_sq_l")
+                .resizable()
+                .frame(width: 100, height: 100)
+                .scaleEffect(animationAmount)
+                .animation(.easeInOut(duration: 1).repeatForever(autoreverses:true), value: animationAmount)
+                .onAppear{
+                    animationAmount = 1
+                }
+            
+            
+            Text("Cargando...")
+                .font(.title)
+                .bold()
+                .foregroundColor(.red)
+                .padding(.top, 100)
+        }
     }
 }
 
