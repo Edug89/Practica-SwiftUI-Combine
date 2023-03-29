@@ -15,7 +15,7 @@ struct RootView: View {
         case .none:
             LoginView()
         case .loaded:
-            HomeView()
+            HeroView(viewModel: viewModelHero())
         case .loading:
             LoaderView()
        

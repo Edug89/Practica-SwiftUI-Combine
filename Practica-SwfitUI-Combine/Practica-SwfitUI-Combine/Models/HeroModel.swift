@@ -34,7 +34,7 @@ struct DataClass: Codable {
 }
 
 // MARK: - Hero
-struct Hero: Codable {
+struct Hero: Codable, Identifiable{ //HAy que añadir identifiable da error Foreach 
     let id: Int
     let name: String
     let description: String

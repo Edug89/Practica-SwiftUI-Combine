@@ -187,7 +187,7 @@
 		142BAE5429CF64C400340B12 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				142BAEA229D3703500340B12 /* New Group */,
+				142BAEA229D3703500340B12 /* Principal */,
 				142BAE5A29D0365800340B12 /* Main */,
 			);
 			path = ViewModels;
@@ -250,12 +250,12 @@
 			path = HeroView;
 			sourceTree = "<group>";
 		};
-		142BAEA229D3703500340B12 /* New Group */ = {
+		142BAEA229D3703500340B12 /* Principal */ = {
 			isa = PBXGroup;
 			children = (
 				142BAEA329D3705100340B12 /* viewModelHero.swift */,
 			);
-			path = "New Group";
+			path = Principal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

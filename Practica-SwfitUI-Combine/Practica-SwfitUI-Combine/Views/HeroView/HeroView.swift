@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct HeroView: View {
+    @StateObject var viewModel: viewModelHero
+    //@State private var filter = "" TODO barra de búsqueda
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            List{
+                if let hero = viewModel.hero{
+                    ForEach(hero) { hero in
+                        Text("\(hero.name)")
+                    }
+                }
+            }
+        }
     }
 }
 
 struct HeroView_Previews: PreviewProvider {
     static var previews: some View {
-        HeroView()
+        HeroView(viewModel: viewModelHero(testing: true))
     }
 }

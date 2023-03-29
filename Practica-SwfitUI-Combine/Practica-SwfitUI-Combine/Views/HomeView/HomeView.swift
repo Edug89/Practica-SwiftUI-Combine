@@ -8,18 +8,24 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var selection = 0
+    
     var body: some View {
-        TabView{
-            HeroView()
-                .tabItem {
-                    Image(systemName: "person")
-                    Text ("Hero")
-                }
-            Text("Detail Hero")
-                .tabItem {
-                    Image(systemName:"list.bullet.circle")
-                    Text ("DetailHero")
-                }
+        
+        ZStack {
+            TabView(selection: $selection){
+                HeroView(viewModel: viewModelHero())
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text ("Hero")
+                    }.tag(0)
+                
+                Text("Detail Hero")
+                    .tabItem {
+                        Image(systemName:"list.bullet.circle")
+                        Text ("DetailHero")
+                    }.tag(1)
+            }
         }
     }
 }

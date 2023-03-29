@@ -25,7 +25,7 @@ struct LoginView: View {
                     .opacity(0.1)
                 
                 VStack{
-                    NavigationLink(destination: HomeView()){
+                    NavigationLink(destination: HeroView(viewModel: viewModelHero(testing: true))){
                         Text("Entrar")
                             .font(.title)
                             .foregroundColor(.white)
