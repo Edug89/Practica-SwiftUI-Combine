@@ -10,5 +10,5 @@ import Foundation
 //Implanto numeraciones de estado
 
 enum Status {
-    case none, loading, loaded
+    case none, loading, loaded, error(error: String)
 }

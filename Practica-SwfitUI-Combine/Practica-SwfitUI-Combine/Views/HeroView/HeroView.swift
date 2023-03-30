@@ -16,7 +16,11 @@ struct HeroView: View {
             List{
                 if let hero = viewModel.hero{
                     ForEach(hero) { hero in
-                        Text("\(hero.name)")
+                        NavigationLink{
+                            //TODO Pendiente de poner vista series
+                        } label: {
+                            HeroRowView(hero: hero)
+                        }
                     }
                 }
             }

@@ -27,15 +27,21 @@ enum EndPoints: String {
     case series = "/v1/public/characters/{characterId}/series" //Pendiente de configurar en postman
 }
 
+enum OrderBy: String {
+    case formerModified = "-modified"
+    case recentModified = "modified"
+    case startYear = "startYear"
+}
 
-final class BaseNetwork{
-    static let shared = BaseNetwork()
+
+struct BaseNetwork{
     
-    func getMarvelHeroes () -> URLRequest{
+    func getMarvelHeroes(sortBy orderMethod: OrderBy) -> URLRequest{
         
         //URL generation
         let accessAuth = "?ts=\(server.ts.rawValue)&apikey=\(server.apikey.rawValue)&hash=\(server.hash.rawValue)"
-        let urlString = "\(EndPoints.url.rawValue)\(EndPoints.hero.rawValue)\(accessAuth)"
+        let sortBy = "&orderBy=\(orderMethod.rawValue)"
+        let urlString = "\(EndPoints.url.rawValue)\(EndPoints.hero.rawValue)\(accessAuth)\(sortBy)"
         let url = URL(string: urlString)
         
         //Request
@@ -45,9 +51,6 @@ final class BaseNetwork{
         return request
         
     }
-    
-    
-    
 }
 
 

@@ -40,6 +40,12 @@
 		142BAE9E29D3610B00340B12 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE9B29D3610B00340B12 /* HomeView.swift */; };
 		142BAEA129D3681C00340B12 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA029D3681C00340B12 /* HeroView.swift */; };
 		142BAEA429D3705100340B12 /* viewModelHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA329D3705100340B12 /* viewModelHero.swift */; };
+		142BAEA629D604A600340B12 /* HeroRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA529D604A500340B12 /* HeroRowView.swift */; };
+		142BAEA729D604A600340B12 /* HeroRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA529D604A500340B12 /* HeroRowView.swift */; };
+		142BAEA829D604A600340B12 /* HeroRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA529D604A500340B12 /* HeroRowView.swift */; };
+		142BAEAA29D6059800340B12 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA929D6059800340B12 /* Tools.swift */; };
+		142BAEAB29D6059800340B12 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA929D6059800340B12 /* Tools.swift */; };
+		142BAEAC29D6059800340B12 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA929D6059800340B12 /* Tools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +88,8 @@
 		142BAE9B29D3610B00340B12 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		142BAEA029D3681C00340B12 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
 		142BAEA329D3705100340B12 /* viewModelHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModelHero.swift; sourceTree = "<group>"; };
+		142BAEA529D604A500340B12 /* HeroRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRowView.swift; sourceTree = "<group>"; };
+		142BAEA929D6059800340B12 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +186,7 @@
 				142BAE9F29D367BA00340B12 /* HeroView */,
 				142BAE9A29D360F200340B12 /* HomeView */,
 				142BAE6F29D0544200340B12 /* RootView.swift */,
-				142BAE7329D056B700340B12 /* Tools */,
+				142BAE7329D056B700340B12 /* LoaderView */,
 				142BAE5729CF64E900340B12 /* Login */,
 			);
 			path = Views;
@@ -222,16 +230,17 @@
 			isa = PBXGroup;
 			children = (
 				142BAE6729D044E800340B12 /* BaseNetwork.swift */,
+				142BAEA929D6059800340B12 /* Tools.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		142BAE7329D056B700340B12 /* Tools */ = {
+		142BAE7329D056B700340B12 /* LoaderView */ = {
 			isa = PBXGroup;
 			children = (
 				142BAE7429D056C500340B12 /* LoaderView.swift */,
 			);
-			path = Tools;
+			path = LoaderView;
 			sourceTree = "<group>";
 		};
 		142BAE9A29D360F200340B12 /* HomeView */ = {
@@ -246,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				142BAEA029D3681C00340B12 /* HeroView.swift */,
+				142BAEA529D604A500340B12 /* HeroRowView.swift */,
 			);
 			path = HeroView;
 			sourceTree = "<group>";
@@ -399,9 +409,11 @@
 				142BAEA129D3681C00340B12 /* HeroView.swift in Sources */,
 				142BAE2C29CF62DD00340B12 /* Persistence.swift in Sources */,
 				142BAE2F29CF62DD00340B12 /* Practica_SwfitUI_Combine.xcdatamodeld in Sources */,
+				142BAEA629D604A600340B12 /* HeroRowView.swift in Sources */,
 				142BAE6029D0376900340B12 /* StatusModel.swift in Sources */,
 				142BAE9C29D3610B00340B12 /* HomeView.swift in Sources */,
 				142BAEA429D3705100340B12 /* viewModelHero.swift in Sources */,
+				142BAEAA29D6059800340B12 /* Tools.swift in Sources */,
 				142BAE7029D0544200340B12 /* RootView.swift in Sources */,
 				142BAE5929CF64FB00340B12 /* LoginView.swift in Sources */,
 				142BAE7529D056C500340B12 /* LoaderView.swift in Sources */,
@@ -418,10 +430,12 @@
 				142BAE6929D044E800340B12 /* BaseNetwork.swift in Sources */,
 				142BAE7129D0544200340B12 /* RootView.swift in Sources */,
 				142BAE7629D056C500340B12 /* LoaderView.swift in Sources */,
+				142BAEA729D604A600340B12 /* HeroRowView.swift in Sources */,
 				142BAE5D29D0374F00340B12 /* RootViewModel.swift in Sources */,
 				142BAE9D29D3610B00340B12 /* HomeView.swift in Sources */,
 				142BAE3929CF62DD00340B12 /* Practica_SwfitUI_CombineTests.swift in Sources */,
 				142BAE6D29D04D6700340B12 /* HeroModel.swift in Sources */,
+				142BAEAB29D6059800340B12 /* Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +448,9 @@
 				142BAE6229D0376900340B12 /* StatusModel.swift in Sources */,
 				142BAE5E29D0374F00340B12 /* RootViewModel.swift in Sources */,
 				142BAE4529CF62DD00340B12 /* Practica_SwfitUI_CombineUITestsLaunchTests.swift in Sources */,
+				142BAEA829D604A600340B12 /* HeroRowView.swift in Sources */,
 				142BAE7229D0544200340B12 /* RootView.swift in Sources */,
+				142BAEAC29D6059800340B12 /* Tools.swift in Sources */,
 				142BAE7729D056C500340B12 /* LoaderView.swift in Sources */,
 				142BAE6A29D044E800340B12 /* BaseNetwork.swift in Sources */,
 				142BAE6E29D04D6700340B12 /* HeroModel.swift in Sources */,

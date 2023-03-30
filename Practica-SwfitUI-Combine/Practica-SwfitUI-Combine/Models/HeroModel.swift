@@ -7,12 +7,6 @@
 
 import Foundation
 
-// MARK: - Welcome
-//struct Welcome: Codable {
-//    let greeting: String
-//    let instructions: [Instruction]
-//}
-
 // MARK: - Instruction
 struct Instruction: Codable {
     let code: Int
@@ -34,11 +28,11 @@ struct DataClass: Codable {
 }
 
 // MARK: - Hero
-struct Hero: Codable, Identifiable{ //HAy que añadir identifiable da error Foreach 
+struct Hero: Codable, Identifiable{ //Hay que añadir identifiable da error Foreach 
     let id: Int
     let name: String
     let description: String
-    let modified: Date
+    let modified: String
     let thumbnail: Thumbnail
     let resourceURI: String
     let comics: Comics
@@ -95,7 +89,7 @@ struct Thumbnail: Codable {
 }
 
 enum Extension: String, Codable {
-    case gif = "gif"
+    //case gif = "gif"
     case jpg = "jpg"
 }
 

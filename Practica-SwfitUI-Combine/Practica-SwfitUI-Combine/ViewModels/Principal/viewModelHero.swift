@@ -14,19 +14,19 @@ final class viewModelHero : ObservableObject{
     
     var suscriptors = Set<AnyCancellable>()
     
-    //Inicializamos funciones
     init(testing:Bool = false){
-            if !testing{
-                self.getHero()
-            }else{
-                self.getHerosDesting()
-            }
+        if (testing){
+            getHerosDesting()
+        }else{
+            getHero(sortBy: .formerModified)
         }
+    }
     
-    func getHero(){ //PENDIENTE DE HACER DEBUUGER
+    func getHero(sortBy order: OrderBy){ //PENDIENTE DE HACER DEBUUGER
+        self.status = .none
         self.status = .loading
         
-        URLSession.shared.dataTaskPublisher(for: BaseNetwork.shared.getMarvelHeroes())
+        URLSession.shared.dataTaskPublisher(for: BaseNetwork().getMarvelHeroes(sortBy: .formerModified))
             .tryMap {
                 guard let response = $0.response as? HTTPURLResponse, response.statusCode == 200 else{
                     debugPrint("URL: \(String(describing: $0.response.url))")
@@ -40,8 +40,8 @@ final class viewModelHero : ObservableObject{
             .sink { completion in
                 switch completion{
                 case .failure:
-                    debugPrint("Completrion . failure:")
-//                    self.status = .error(errorMsg: "Error: Failure at retrieven the heroes")
+                    self.status = Status.error(error: "Error PASA")
+                    //debugPrint("Completrion . failure:")
                 case.finished:
                     debugPrint("Completrion . finished")
                     self.status = .loaded
@@ -55,10 +55,15 @@ final class viewModelHero : ObservableObject{
     
     //For UI Desing //SOLU
     func getHerosDesting(){
-        let heroe1 = Hero(id: 54543, name: "SOLUCION1", description: "prueba", modified: Date(), thumbnail: Thumbnail(path: "thubpath", thumbnailExtension: .jpg), resourceURI: "prueba", comics: Comics(available: -5, collectionURI: "prueba", items: [], returned: -1), series: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), stories: Stories(available: -1, collectionURI: "prueba", items: [], returned: -1), events: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), urls: [])
-        let heroe2 = Hero(id: 54543, name: "SOLUCION 2", description: "prueba", modified: Date(), thumbnail: Thumbnail(path: "thubpath", thumbnailExtension: .jpg), resourceURI: "prueba", comics: Comics(available: -5, collectionURI: "prueba", items: [], returned: -1), series: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), stories: Stories(available: -1, collectionURI: "prueba", items: [], returned: -1), events: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), urls: [])
+        let hero1 = Hero(id: 1, name: "SOLUCION1", description: "prueba", modified: "", thumbnail: Thumbnail(path: "thubpath", thumbnailExtension: .jpg), resourceURI: "prueba", comics: Comics(available: -5, collectionURI: "prueba", items: [], returned: -1), series: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), stories: Stories(available: -1, collectionURI: "prueba", items: [], returned: -1), events: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), urls: [])
         
-        self.hero = [heroe1, heroe2]
+        let hero2 = Hero(id: 2, name: "SOLUCION 2", description: "prueba", modified: "", thumbnail: Thumbnail(path: "thubpath", thumbnailExtension: .jpg), resourceURI: "prueba", comics: Comics(available: -5, collectionURI: "prueba", items: [], returned: -1), series: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), stories: Stories(available: -1, collectionURI: "prueba", items: [], returned: -1), events: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), urls: [])
+        
+        let hero3 = Hero(id: 3, name: "SOLUCION 3", description: "prueba", modified: "", thumbnail: Thumbnail(path: "thubpath", thumbnailExtension: .jpg), resourceURI: "prueba", comics: Comics(available: -5, collectionURI: "prueba", items: [], returned: -1), series: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), stories: Stories(available: -1, collectionURI: "prueba", items: [], returned: -1), events: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), urls: [])
+        
+        let hero4 = Hero(id: 4, name: "SOLUCION 4", description: "prueba", modified: "", thumbnail: Thumbnail(path: "thubpath", thumbnailExtension: .jpg), resourceURI: "prueba", comics: Comics(available: -5, collectionURI: "prueba", items: [], returned: -1), series: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), stories: Stories(available: -1, collectionURI: "prueba", items: [], returned: -1), events: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), urls: [])
+        
+        self.hero = [hero1, hero2, hero3, hero4]
     }
     
 }

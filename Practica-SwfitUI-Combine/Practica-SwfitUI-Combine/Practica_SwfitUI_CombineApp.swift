@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct Practica_SwfitUI_CombineApp: App {
   //  let persistenceController = PersistenceController.shared
-    @StateObject var rootViewModel = RootViewModel() //Esto es un singeltond desde cualquier pantalla tenemos acceso
+    @StateObject var rootViewModel = viewModelHero() //Esto es un singeltond desde cualquier pantalla tenemos acceso
     
     var body: some Scene {
         WindowGroup {

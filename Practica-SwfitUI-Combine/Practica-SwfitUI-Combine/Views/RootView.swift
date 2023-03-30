@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RootView: View {
-    @EnvironmentObject var rootViewModel: RootViewModel
+    @EnvironmentObject var rootViewModel: viewModelHero
     
     var body: some View {
         switch rootViewModel.status{
@@ -18,6 +18,8 @@ struct RootView: View {
             HeroView(viewModel: viewModelHero())
         case .loading:
             LoaderView()
+        case .error(error: let errorString):
+            Text("error: \(errorString)")
        
         }
     }
@@ -26,6 +28,6 @@ struct RootView: View {
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
         RootView()
-            .environmentObject(RootViewModel())
+            .environmentObject(viewModelHero())
     }
 }
