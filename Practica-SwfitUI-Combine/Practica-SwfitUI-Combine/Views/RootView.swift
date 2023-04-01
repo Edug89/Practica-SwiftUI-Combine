@@ -15,7 +15,7 @@ struct RootView: View {
         case .none:
             LoginView()
         case .loaded:
-            HeroView(viewModel: viewModelHero())
+            HeroView(heroviewModel: rootViewModel)
         case .loading:
             LoaderView()
         case .error(error: let errorString):

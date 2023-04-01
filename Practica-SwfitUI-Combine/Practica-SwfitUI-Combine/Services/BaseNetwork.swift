@@ -24,7 +24,7 @@ enum HTTPMethods:String {
 enum EndPoints: String {
     case url = "https://gateway.marvel.com"
     case hero = "/v1/public/characters"
-    case series = "/v1/public/characters/{characterId}/series" //Pendiente de configurar en postman
+    case series = "/series"
 }
 
 enum OrderBy: String {
@@ -35,13 +35,29 @@ enum OrderBy: String {
 
 
 struct BaseNetwork{
-    
+    //Llamada Héroes
     func getMarvelHeroes(sortBy orderMethod: OrderBy) -> URLRequest{
         
         //URL generation
         let accessAuth = "?ts=\(server.ts.rawValue)&apikey=\(server.apikey.rawValue)&hash=\(server.hash.rawValue)"
         let sortBy = "&orderBy=\(orderMethod.rawValue)"
         let urlString = "\(EndPoints.url.rawValue)\(EndPoints.hero.rawValue)\(accessAuth)\(sortBy)"
+        let url = URL(string: urlString)
+        
+        //Request
+        var request = URLRequest(url: url!)
+        request.httpMethod = HTTPMethods.get.rawValue
+        
+        return request
+        
+    }
+    
+        //Llamada series
+    func getMarvelSeries(with heroId: Int,sortBy orderMethod: OrderBy) -> URLRequest{
+        //URL generation
+        let accessAuth = "?ts=\(server.ts.rawValue)&apikey=\(server.apikey.rawValue)&hash=\(server.hash.rawValue)"
+        let sortBy = "&orderBy=\(orderMethod.rawValue)"
+        let urlString = "\(EndPoints.url.rawValue)\(EndPoints.hero.rawValue)/\(heroId)\(EndPoints.series.rawValue)\(accessAuth)\(sortBy)" //Pendiente de probar
         let url = URL(string: urlString)
         
         //Request

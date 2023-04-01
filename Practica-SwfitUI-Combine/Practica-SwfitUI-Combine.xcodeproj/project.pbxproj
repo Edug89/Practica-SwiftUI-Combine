@@ -46,6 +46,29 @@
 		142BAEAA29D6059800340B12 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA929D6059800340B12 /* Tools.swift */; };
 		142BAEAB29D6059800340B12 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA929D6059800340B12 /* Tools.swift */; };
 		142BAEAC29D6059800340B12 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA929D6059800340B12 /* Tools.swift */; };
+		142BAEAE29D74B3800340B12 /* SeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEAD29D74B3800340B12 /* SeriesModel.swift */; };
+		142BAEAF29D74B3D00340B12 /* SeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEAD29D74B3800340B12 /* SeriesModel.swift */; };
+		142BAEB029D74B3D00340B12 /* SeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEAD29D74B3800340B12 /* SeriesModel.swift */; };
+		142BAEB329D7500500340B12 /* SeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEB229D7500500340B12 /* SeriesView.swift */; };
+		142BAEB429D7500500340B12 /* SeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEB229D7500500340B12 /* SeriesView.swift */; };
+		142BAEB529D7500500340B12 /* SeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEB229D7500500340B12 /* SeriesView.swift */; };
+		1482FAB529D8477C006842B9 /* viewModelSerie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482FAB429D8477C006842B9 /* viewModelSerie.swift */; };
+		1482FAB629D8477C006842B9 /* viewModelSerie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482FAB429D8477C006842B9 /* viewModelSerie.swift */; };
+		1482FAB729D8477C006842B9 /* viewModelSerie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482FAB429D8477C006842B9 /* viewModelSerie.swift */; };
+		1482FAB929D85475006842B9 /* SeriesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482FAB829D85475006842B9 /* SeriesRowView.swift */; };
+		1482FABA29D85475006842B9 /* SeriesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482FAB829D85475006842B9 /* SeriesRowView.swift */; };
+		1482FABB29D85475006842B9 /* SeriesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482FAB829D85475006842B9 /* SeriesRowView.swift */; };
+		1482FABC29D88A49006842B9 /* viewModelHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA329D3705100340B12 /* viewModelHero.swift */; };
+		1482FABD29D88A49006842B9 /* viewModelHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA329D3705100340B12 /* viewModelHero.swift */; };
+		1482FABE29D88A56006842B9 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA029D3681C00340B12 /* HeroView.swift */; };
+		1482FABF29D88A58006842B9 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAEA029D3681C00340B12 /* HeroView.swift */; };
+		1482FAC029D88A65006842B9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE5829CF64FB00340B12 /* LoginView.swift */; };
+		1482FAC129D88A66006842B9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE5829CF64FB00340B12 /* LoginView.swift */; };
+		1482FAC229D88A6B006842B9 /* Practica_SwfitUI_CombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE2229CF62DB00340B12 /* Practica_SwfitUI_CombineApp.swift */; };
+		1482FAC329D88A6C006842B9 /* Practica_SwfitUI_CombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BAE2229CF62DB00340B12 /* Practica_SwfitUI_CombineApp.swift */; };
+		1482FAC829D89F29006842B9 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482FAC729D89F29006842B9 /* ErrorView.swift */; };
+		1482FAC929D89F29006842B9 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482FAC729D89F29006842B9 /* ErrorView.swift */; };
+		1482FACA29D89F29006842B9 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482FAC729D89F29006842B9 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +113,11 @@
 		142BAEA329D3705100340B12 /* viewModelHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModelHero.swift; sourceTree = "<group>"; };
 		142BAEA529D604A500340B12 /* HeroRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRowView.swift; sourceTree = "<group>"; };
 		142BAEA929D6059800340B12 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		142BAEAD29D74B3800340B12 /* SeriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesModel.swift; sourceTree = "<group>"; };
+		142BAEB229D7500500340B12 /* SeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesView.swift; sourceTree = "<group>"; };
+		1482FAB429D8477C006842B9 /* viewModelSerie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModelSerie.swift; sourceTree = "<group>"; };
+		1482FAB829D85475006842B9 /* SeriesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesRowView.swift; sourceTree = "<group>"; };
+		1482FAC729D89F29006842B9 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,11 +211,13 @@
 		142BAE5229CF64AF00340B12 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				142BAE9F29D367BA00340B12 /* HeroView */,
-				142BAE9A29D360F200340B12 /* HomeView */,
 				142BAE6F29D0544200340B12 /* RootView.swift */,
+				142BAE9F29D367BA00340B12 /* HeroView */,
+				142BAEB129D74FEA00340B12 /* SeriesView */,
+				1482FAC629D89EEF006842B9 /* ErrorView */,
 				142BAE7329D056B700340B12 /* LoaderView */,
 				142BAE5729CF64E900340B12 /* Login */,
+				142BAE9A29D360F200340B12 /* HomeView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,6 +236,7 @@
 			children = (
 				142BAE5F29D0376900340B12 /* StatusModel.swift */,
 				142BAE6B29D04D6700340B12 /* HeroModel.swift */,
+				142BAEAD29D74B3800340B12 /* SeriesModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -264,8 +295,26 @@
 			isa = PBXGroup;
 			children = (
 				142BAEA329D3705100340B12 /* viewModelHero.swift */,
+				1482FAB429D8477C006842B9 /* viewModelSerie.swift */,
 			);
 			path = Principal;
+			sourceTree = "<group>";
+		};
+		142BAEB129D74FEA00340B12 /* SeriesView */ = {
+			isa = PBXGroup;
+			children = (
+				142BAEB229D7500500340B12 /* SeriesView.swift */,
+				1482FAB829D85475006842B9 /* SeriesRowView.swift */,
+			);
+			path = SeriesView;
+			sourceTree = "<group>";
+		};
+		1482FAC629D89EEF006842B9 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				1482FAC729D89F29006842B9 /* ErrorView.swift */,
+			);
+			path = ErrorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,16 +454,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				142BAE5C29D0374F00340B12 /* RootViewModel.swift in Sources */,
+				1482FAB529D8477C006842B9 /* viewModelSerie.swift in Sources */,
 				142BAE6C29D04D6700340B12 /* HeroModel.swift in Sources */,
 				142BAEA129D3681C00340B12 /* HeroView.swift in Sources */,
 				142BAE2C29CF62DD00340B12 /* Persistence.swift in Sources */,
 				142BAE2F29CF62DD00340B12 /* Practica_SwfitUI_Combine.xcdatamodeld in Sources */,
 				142BAEA629D604A600340B12 /* HeroRowView.swift in Sources */,
+				1482FAB929D85475006842B9 /* SeriesRowView.swift in Sources */,
 				142BAE6029D0376900340B12 /* StatusModel.swift in Sources */,
 				142BAE9C29D3610B00340B12 /* HomeView.swift in Sources */,
+				142BAEAE29D74B3800340B12 /* SeriesModel.swift in Sources */,
 				142BAEA429D3705100340B12 /* viewModelHero.swift in Sources */,
+				142BAEB329D7500500340B12 /* SeriesView.swift in Sources */,
 				142BAEAA29D6059800340B12 /* Tools.swift in Sources */,
 				142BAE7029D0544200340B12 /* RootView.swift in Sources */,
+				1482FAC829D89F29006842B9 /* ErrorView.swift in Sources */,
 				142BAE5929CF64FB00340B12 /* LoginView.swift in Sources */,
 				142BAE7529D056C500340B12 /* LoaderView.swift in Sources */,
 				142BAE2329CF62DB00340B12 /* Practica_SwfitUI_CombineApp.swift in Sources */,
@@ -428,14 +482,23 @@
 			files = (
 				142BAE6129D0376900340B12 /* StatusModel.swift in Sources */,
 				142BAE6929D044E800340B12 /* BaseNetwork.swift in Sources */,
+				1482FAC929D89F29006842B9 /* ErrorView.swift in Sources */,
+				1482FABE29D88A56006842B9 /* HeroView.swift in Sources */,
 				142BAE7129D0544200340B12 /* RootView.swift in Sources */,
 				142BAE7629D056C500340B12 /* LoaderView.swift in Sources */,
 				142BAEA729D604A600340B12 /* HeroRowView.swift in Sources */,
+				142BAEB429D7500500340B12 /* SeriesView.swift in Sources */,
+				1482FABA29D85475006842B9 /* SeriesRowView.swift in Sources */,
 				142BAE5D29D0374F00340B12 /* RootViewModel.swift in Sources */,
 				142BAE9D29D3610B00340B12 /* HomeView.swift in Sources */,
+				1482FAC029D88A65006842B9 /* LoginView.swift in Sources */,
+				142BAEAF29D74B3D00340B12 /* SeriesModel.swift in Sources */,
 				142BAE3929CF62DD00340B12 /* Practica_SwfitUI_CombineTests.swift in Sources */,
 				142BAE6D29D04D6700340B12 /* HeroModel.swift in Sources */,
+				1482FAC229D88A6B006842B9 /* Practica_SwfitUI_CombineApp.swift in Sources */,
 				142BAEAB29D6059800340B12 /* Tools.swift in Sources */,
+				1482FABC29D88A49006842B9 /* viewModelHero.swift in Sources */,
+				1482FAB629D8477C006842B9 /* viewModelSerie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,16 +506,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142BAEB029D74B3D00340B12 /* SeriesModel.swift in Sources */,
 				142BAE9E29D3610B00340B12 /* HomeView.swift in Sources */,
 				142BAE4329CF62DD00340B12 /* Practica_SwfitUI_CombineUITests.swift in Sources */,
 				142BAE6229D0376900340B12 /* StatusModel.swift in Sources */,
+				1482FAC329D88A6C006842B9 /* Practica_SwfitUI_CombineApp.swift in Sources */,
 				142BAE5E29D0374F00340B12 /* RootViewModel.swift in Sources */,
+				1482FAB729D8477C006842B9 /* viewModelSerie.swift in Sources */,
+				1482FABF29D88A58006842B9 /* HeroView.swift in Sources */,
 				142BAE4529CF62DD00340B12 /* Practica_SwfitUI_CombineUITestsLaunchTests.swift in Sources */,
 				142BAEA829D604A600340B12 /* HeroRowView.swift in Sources */,
+				1482FABD29D88A49006842B9 /* viewModelHero.swift in Sources */,
 				142BAE7229D0544200340B12 /* RootView.swift in Sources */,
 				142BAEAC29D6059800340B12 /* Tools.swift in Sources */,
+				1482FAC129D88A66006842B9 /* LoginView.swift in Sources */,
 				142BAE7729D056C500340B12 /* LoaderView.swift in Sources */,
+				1482FACA29D89F29006842B9 /* ErrorView.swift in Sources */,
+				1482FABB29D85475006842B9 /* SeriesRowView.swift in Sources */,
 				142BAE6A29D044E800340B12 /* BaseNetwork.swift in Sources */,
+				142BAEB529D7500500340B12 /* SeriesView.swift in Sources */,
 				142BAE6E29D04D6700340B12 /* HeroModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

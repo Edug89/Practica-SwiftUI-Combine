@@ -16,15 +16,16 @@ final class viewModelHero : ObservableObject{
     
     init(testing:Bool = false){
         if (testing){
-            getHerosDesting()
+            getHerosTesting()
         }else{
             getHero(sortBy: .formerModified)
         }
     }
     
-    func getHero(sortBy order: OrderBy){ //PENDIENTE DE HACER DEBUUGER
-        self.status = .none
+    func getHero(sortBy order: OrderBy){
         self.status = .loading
+        
+      
         
         URLSession.shared.dataTaskPublisher(for: BaseNetwork().getMarvelHeroes(sortBy: .formerModified))
             .tryMap {
@@ -40,10 +41,9 @@ final class viewModelHero : ObservableObject{
             .sink { completion in
                 switch completion{
                 case .failure:
-                    self.status = Status.error(error: "Error PASA")
+                    self.status = Status.error(error: "Error buscando héroes")
                     //debugPrint("Completrion . failure:")
                 case.finished:
-                    debugPrint("Completrion . finished")
                     self.status = .loaded
                     
                 }
@@ -54,7 +54,7 @@ final class viewModelHero : ObservableObject{
     }
     
     //For UI Desing //SOLU
-    func getHerosDesting(){
+    func getHerosTesting(){
         let hero1 = Hero(id: 1, name: "SOLUCION1", description: "prueba", modified: "", thumbnail: Thumbnail(path: "thubpath", thumbnailExtension: .jpg), resourceURI: "prueba", comics: Comics(available: -5, collectionURI: "prueba", items: [], returned: -1), series: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), stories: Stories(available: -1, collectionURI: "prueba", items: [], returned: -1), events: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), urls: [])
         
         let hero2 = Hero(id: 2, name: "SOLUCION 2", description: "prueba", modified: "", thumbnail: Thumbnail(path: "thubpath", thumbnailExtension: .jpg), resourceURI: "prueba", comics: Comics(available: -5, collectionURI: "prueba", items: [], returned: -1), series: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), stories: Stories(available: -1, collectionURI: "prueba", items: [], returned: -1), events: Comics(available: -1, collectionURI: "Prueba", items: [], returned: -1), urls: [])

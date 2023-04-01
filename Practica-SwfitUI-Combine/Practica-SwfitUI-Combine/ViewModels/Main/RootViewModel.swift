@@ -12,11 +12,4 @@ final class RootViewModel: ObservableObject {
     @Published var status = Status.none //indicamos que si hay cambio informe
     @Published var iSlogged: Bool = false
     
-    
-//    //Token JWT
-//    @Published var TokenJWT:String = ""
-//    var suscriptors = Set<AnyCancellable>() //Indicamos suscriptores
-//
-//
-    
 }

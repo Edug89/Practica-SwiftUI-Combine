@@ -18,13 +18,3 @@ enum ImageAspectRatio:String{
 
 }
 
-final class Tool{
-    
-    static let shared = Tool()
-    
-    func ThumbnailToURLConverter(this thumbnail: Thumbnail, withAspect aspectRatio: ImageAspectRatio) -> URL{
-        let url = URL(string: "\(thumbnail.path)/\(aspectRatio.rawValue).\(thumbnail.thumbnailExtension)")!
-        return url
-        
-    }
-}

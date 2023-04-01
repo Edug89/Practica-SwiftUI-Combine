@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct HeroView: View {
-    @StateObject var viewModel: viewModelHero
-    //@State private var filter = "" TODO barra de búsqueda
+    @StateObject var heroviewModel: viewModelHero
+    
     
     var body: some View {
         NavigationStack{
             List{
-                if let hero = viewModel.hero{
+                if let hero = heroviewModel.hero{
                     ForEach(hero) { hero in
                         NavigationLink{
-                            //TODO Pendiente de poner vista series
+                            SeriesView(heroSerieViewModel: viewModelSerie(hero: hero),hero:hero)
                         } label: {
                             HeroRowView(hero: hero)
                         }
@@ -30,6 +30,6 @@ struct HeroView: View {
 
 struct HeroView_Previews: PreviewProvider {
     static var previews: some View {
-        HeroView(viewModel: viewModelHero(testing: true))
+        HeroView(heroviewModel: viewModelHero(testing: true))
     }
 }

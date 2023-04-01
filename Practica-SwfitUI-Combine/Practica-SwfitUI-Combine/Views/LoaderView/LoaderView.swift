@@ -21,14 +21,16 @@ struct LoaderView: View {
                 .animation(.easeInOut(duration: 1).repeatForever(autoreverses:true), value: animationAmount)
                 .onAppear{
                     animationAmount = 1
+                        
                 }
-            
+                .id(0)
             
             Text("Cargando...")
                 .font(.title)
                 .bold()
                 .foregroundColor(.red)
                 .padding(.top, 100)
+                .id(1)
         }
     }
 }
